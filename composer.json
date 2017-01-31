@@ -1,18 +1,14 @@
 {
     "name": "arnaupc/li3_debugbar",
     "type": "lithium-library",
-    "description": "Symfony2 Debug Bar ported to Lithium 1.1",
+    "description": "Symfony2 Debug Bar ported to Lithium version 1.1",
     "keywords": ["debug", "debugbar", "li3", "lithium"],
-    "homepage": "https://github.com/ServiceRunner/li3_debug",
+    "homepage": "https://github.com/arnaupc/li3_debugbar",
     "authors": [
         {
             "name": "Arnau Pujol",
             "email": "arnaupc@hotmail.com",
             "homepage": "https://github.com/arnaupc"
-        },
-        {
-            "name": "Contributors",
-            "homepage": "https://github.com/ServiceRunner/li3_debug/contributors"
         }
     ],
     "require": {

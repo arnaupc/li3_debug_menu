@@ -1,6 +1,6 @@
 <?php
 
-namespace li3_debug\extensions\storage;
+namespace li3_debugbar\extensions\storage;
 
 use lithium\core\Environment;
 use lithium\core\Libraries;
@@ -125,7 +125,7 @@ class Debugger extends \lithium\core\StaticObject
                 echo static::$_view->render(array('element' => 'debug_bar'));
             } catch (\lithium\template\TemplateException $e) {
                 $view = new View(array('paths' => array('element' => '{:library}/views/elements/{:template}.{:type}.php')));
-                echo $view->render(array('element' => 'debug_bar'), array(), array('library' => 'li3_debug'));
+                echo $view->render(array('element' => 'debug_bar'), array(), array('library' => 'li3_debugbar'));
             }
         }
     }

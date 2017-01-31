@@ -3,5 +3,5 @@
 use lithium\core\Environment;
 
 if (!Environment::is('production')) {
-    \li3_debug\extensions\storage\Debugger::init();
+    \li3_debugbar\extensions\storage\Debugger::init();
 }

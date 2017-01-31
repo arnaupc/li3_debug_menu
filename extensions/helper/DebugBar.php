@@ -1,14 +1,14 @@
 <?php
 
-namespace li3_debug\extensions\helper;
+namespace li3_debugbar\extensions\helper;
 
 use lithium\template\TemplateException;
-use li3_debug\extensions\storage\Debugger;
+use li3_debugbar\extensions\storage\Debugger;
 
 /**
  * Helper to output debug bar.
  *
- * @see li3_debug\extensions\storage\Debugger
+ * @see li3_debugbar\extensions\storage\Debugger
  */
 class DebugBar extends \lithium\template\Helper
 {
@@ -153,7 +153,7 @@ class DebugBar extends \lithium\template\Helper
      * Outputs a debug bar using a template. The message will be cleared afterwards.
      * With defaults settings it looks for the template
      * `app/views/elements/debug_bar.html.php`. If it doesn't exist, the  plugin's view
-     * at `li3_debug/views/elements/debug_bar.html.php` will be used. Use this
+     * at `li3_debugbar/views/elements/debug_bar.html.php` will be used. Use this
      * file as a starting point for your own debug bar element. In order to use a
      * different template, adjust `$options['type']` and `$options['template']` to your needs.
      *
@@ -179,7 +179,7 @@ class DebugBar extends \lithium\template\Helper
         try {
             return $view->render($type, $options['data'], $options['options']);
         } catch (TemplateException $e) {
-            return $view->render($type, $options['data'], array('library' => 'li3_debug'));
+            return $view->render($type, $options['data'], array('library' => 'li3_debugbar'));
         }
     }
 }
