@@ -1,5 +1,5 @@
 {
-    "name": "servicerunner/li3_debug",
+    "name": "arnaupc/li3_debugbar",
     "type": "lithium-library",
     "description": "Symfony2 Debug Bar ported to Lithium 1.1",
     "keywords": ["debug", "debugbar", "li3", "lithium"],
