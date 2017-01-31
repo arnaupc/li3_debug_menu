@@ -2,7 +2,7 @@
 
 A port of [Symfony2](http://symfony.com)'s debug menu to [Lithium](http://lithify.me) version 1.1.
 
-Upgrade of [ServiceRunner/li3_debug](https://github.com/ServiceRunner/li3_debug) to adapt new Filters system.
+Update of [ServiceRunner/li3_debug](https://github.com/ServiceRunner/li3_debug) to adapt new Filters system.
 
 ## Installation
 
