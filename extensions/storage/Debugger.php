@@ -122,10 +122,10 @@ class Debugger extends \lithium\core\StaticObject
 
         if (!Environment::is('production') && static::$_view) {
             try {
-                echo static::$_view->render(array('element' => 'debug_bar'));
+                echo static::$_view->render('element', [], ['template' => 'debug_bar']);
             } catch (\lithium\template\TemplateException $e) {
                 $view = new View(array('paths' => array('element' => '{:library}/views/elements/{:template}.{:type}.php')));
-                echo $view->render(array('element' => 'debug_bar'), array(), array('library' => 'li3_debugbar'));
+                echo $view->render('element', [], array('library' => 'li3_debugbar', 'template' => 'debug_bar'));
             }
         }
     }
